@@ -2,21 +2,58 @@
 <html>
 <head>
 	<title>Welcome to my WORLD!</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link href="https://fonts.googleapis.com/css?family=Fira+Sans" rel="stylesheet">
 	<style>
 		body{
 			margin: 0;
 			font-family: 'Fira Sans', sans-serif;
-			background-color: antiquewhite;
+			background-color: #EAF1F7;
+		}
+
+		.landingpic{
+			overflow: hidden;
+			transform: scale(0.9);
+			box-shadow: 20px 20px 20px #38577C;
+			position: relative	;
+			top: 0;
+			right: 0;
+			z-index: 1;
+			}
+
+		.centered{
+			color: #EAF1F7;
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			text-align: center;
+			display: block;
+			text-shadow: 5px 5px 5px black;
+			font-size: 32px;
 		}
 
 		.topnav{
 			overflow: hidden;
-			background-color: steelblue;
+			background-color: #38577C;
 		}
+		
+		.topnavpic{
+			float: left;
+			color: aliceblue;
+			background-color: #38577C;
+			text-align: center;
+			letter-spacing: 5px;
+			padding: 11px 25px;
+			text-decoration: none;
+			overflow: hidden;
+			font-size: 22px;
+			border: 10px solid #A6C4E0;
+			position: absolute;
+					}
 
 		.topnav a{
-			float: left;
+			float: right;
 			color: aliceblue;
 			text-align: center;
 			padding: 14px 16px;
@@ -25,34 +62,45 @@
 		}
 
 		.topnav a:hover{
-			background-color: silver;
+			background-color: #C7D9EF;
 			color: black;
 		}
 
 		.topnav a.active{
-			background-color: darkgrey;
-			color: white
+			background-color: #A6C4E0;
+			color: #EAF1F7;
+		}
+
+		span.hlname{
+			color: #38577C;
 		}
 	</style>
 </head>
 <body>
 	<header>
 		<nav>
+			<div class="topnavpic">
+				<span>RWoC</span>
+			</div>
 			<div class="topnav">	
-				<a class="active" href="#home">Home</a>
-				<a href="#aboutme">About Me</a>
-				<a href="#services">Services</a>
 				<a href="#contact">Contact</a>
+				<a href="#services">Services</a>
+				<a href="#aboutme">About Me</a>
+				<a class="active" href="#home">Home</a>
 			</div>
 		</nav>
 
 	</header>
 
 <main>
+	<div class="landingpic">
+		<img src="https://source.unsplash.com/w7ZyuGYNpRQ/1600x900">
+		<div class="centered">
+		<h1>Hi! My name is <span class="hlname">Roman Daru</span> and this is my World of Coding!</h1>
+		</div>
+	</div>
 
-	<h1>Hi! My name is <span>Roman Daru</span> and this is my World of Coding!</h1>
-
-	<p>Hi there!</p>
+	<h2>Hi there!</h2>
 
 	<div>
 		<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Praesentium necessitatibus iure at recusandae dolore in esse sunt sapiente sed itaque? Neque ex maiores molestiae ratione nesciunt esse unde inventore maxime!</p>
