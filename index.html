@@ -36,6 +36,7 @@
 		.topnav{
 			overflow: hidden;
 			background-color: #38577C;
+			font-weight: 500;
 		}
 		
 		.topnavpic{
@@ -43,14 +44,23 @@
 			color: aliceblue;
 			background-color: #38577C;
 			text-align: center;
-			letter-spacing: 5px;
+			letter-spacing: 0px;
 			padding: 11px 25px;
 			text-decoration: none;
 			overflow: hidden;
 			font-size: 22px;
-			border: 10px solid #A6C4E0;
+			border: 7px solid #A6C4E0;
+			border-radius: 100%;
+			box-shadow: 8px 8px 5px rgb(55, 85, 123,0.7);
 			position: absolute;
-					}
+			top: 0;
+			left: 30px;
+		}
+
+		.topnavpic a{
+			text-decoration: none;
+			color: aliceblue;
+		}
 
 		.topnav a{
 			float: right;
@@ -62,26 +72,60 @@
 		}
 
 		.topnav a:hover{
-			background-color: #C7D9EF;
-			color: black;
+			text-decoration-line: underline;
+			color: white;
+			
 		}
 
-		.topnav a.active{
+		/*.topnav a.active{
 			background-color: #A6C4E0;
-			color: #EAF1F7;
-		}
+			color: #38577C;
+			text-shadow: 1px 1px 2px gray;
+			
+		}*/
 
 		span.hlname{
-			color: #38577C;
+			color: #A6C4E0;
 		}
+
+		footer{
+			margin: 0;
+			padding: 30px;
+			position: relative;
+			top: 50px;
+			background-image: linear-gradient(180deg, #EAF1F7, #38577C);
+		}
+
+		footer a{
+			text-decoration: none;
+			color: aliceblue;
+		}
+
+		.logo{
+			max-width: 20px;
+			max-height: 20px;
+			position: relative;
+			float: right;
+		}
+
+		.socmed{
+			margin: 0;
+			padding: 0px;
+			position: relative;
+			float: right;
+		}
+
+
 	</style>
 </head>
 <body>
 	<header>
 		<nav>
-			<div class="topnavpic">
-				<span>RWoC</span>
-			</div>
+			<a href="/index.html">
+				<div class="topnavpic">
+					<span>RWoC</span>
+				</div>
+			</a>
 			<div class="topnav">	
 				<a href="#contact">Contact</a>
 				<a href="#services">Services</a>
@@ -107,5 +151,15 @@
 	</div>
 
 </main>
+
+<footer>
+	<div>
+		Written by <a href="index.html">Roman Daru&copy;</a> 2019.
+		<div class="socmed">
+			You can find me on: <a href="https://www.facebook.com/JolyJokerko" target="_blank"><img class="logo"src="https://upload.wikimedia.org/wikipedia/commons/c/cd/Facebook_logo_%28square%29.png"></a>
+		
+		</div>
+	</div>
+</footer>
 </body>
 </html>
