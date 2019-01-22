@@ -4,166 +4,8 @@
 	<title>Welcome to my WORLD!</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link href="https://fonts.googleapis.com/css?family=Fira+Sans" rel="stylesheet">
-	<style>
-		*{
-			box-sizing: border-box;
-		}
-		.col-1 {width: 8.33%;}
-		.col-2 {width: 16.66%;}
-		.col-3 {width: 25%;}
-		.col-4 {width: 33.33%;}
-		.col-5 {width: 41.66%;}
-		.col-6 {width: 50%;}
-		.col-7 {width: 58.33%;}
-		.col-8 {width: 66.66%;}
-		.col-9 {width: 75%;}
-		.col-10 {width: 83.33%;}
-		.col-11 {width: 91.66%;}
-		.col-12 {width: 100%;}
-
-		[class*="col-"] {
-			float: left;
-			padding: 15px;
-			
-			
-		}
-
-		body{
-			margin: 0;
-			font-family: 'Fira Sans', sans-serif;
-			background-color: #EAF1F7;
-		}
-
-		.box{
-			margin: 16px;
-			padding: 16px;
-			display: block;
-			max-width: 300px;
-			position: ;
-		}
-
-		.row::after {
-			content: "";
-			clear: both;
-			display: table;
-		}
-
-		.landingpic{
-			overflow: hidden;
-			transform: scale(0.9);
-			box-shadow: 8px 8px 10px #38577C;
-			position: relative	;
-			display: flex;
-			justify-content: center;
-			align-items: center;
-		}
-
-		.centered{
-			color: #EAF1F7;
-			position: absolute;
-			top: 50%;
-			left: 50%;
-			transform: translate(-50%, -50%);
-			text-align: center;
-			display: block;
-			text-shadow: 5px 5px 5px black;
-			font-size: 32px;
-		}
-
-		.color-overlay{
-			width: 100%;
-			height: 100%;
-			background: rgba(0,0,0,0.5);
-			position: absolute;
-		}
-
-		.topnav{
-			overflow: hidden;
-			background-color: #38577C;
-			font-weight: 500;
-		}
-		
-		.topnavpic{
-			float: left;
-			color: aliceblue;
-			background-color: #38577C;
-			text-align: center;
-			letter-spacing: 0px;
-			padding: 11px 25px;
-			text-decoration: none;
-			overflow: hidden;
-			font-size: 22px;
-			border: 7px solid #A6C4E0;
-			border-radius: 100%;
-			box-shadow: 4px 4px 5px rgb(55, 85, 123,0.7);
-			position: absolute;
-			margin-top: 7px;
-			left: 30px;
-		}
-
-		.topnavpic a{
-			text-decoration: none;
-			color: aliceblue;
-		}
-
-		.topnav a{
-			float: right;
-			color: aliceblue;
-			text-align: center;
-			padding: 14px 16px;
-			text-decoration: none;
-			font-size: 17px;
-		}
-
-		.topnav a:hover{
-			text-decoration-line: underline;
-			color: white;
-			
-		}
-
-		/*.topnav a.active{
-			background-color: #A6C4E0;
-			color: #38577C;
-			text-shadow: 1px 1px 2px gray;
-			
-		}*/
-
-		span.hlname{
-			color: #A6C4E0;
-		}
-
-		footer{
-			margin: 0px;
-			padding: 30px;
-			position: ;
-			top: 50px;
-			background-image: linear-gradient(180deg, #EAF1F7, #38577C);
-		}
-
-		footer a{
-			text-decoration: none;
-			color: aliceblue;
-		}
-
-		.logo{
-			max-width: 20px;
-			max-height: 20px;
-			margin-left: 5px;
-			position: relative;
-			float: right;
-		}
-
-		.socmed{
-			margin: 0;
-			padding: 0px;
-			position: relative;
-			float: right;
-		}
-
-
-	</style>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
-
 <body>
 	<header>
 		<nav>
@@ -192,18 +34,20 @@
 			<h1>Hi! My name is <span class="hlname">Roman Daru</span> and this is my World of Coding!</h1>
 	</div>
 
-	<div class="row">
-		<div class="col-4">
+	<hr>
+
+	<div class="box">
+		<div class="">
 			<h2>Hi there Left!</h2>
 			<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Praesentium necessitatibus iure at recusandae dolore in esse sunt sapiente sed itaque? Neque ex maiores molestiae ratione nesciunt esse unde inventore maxime!</p>
 		</div>
 		
-		<div class="col-4">
+		<div class="">
 				<h2>Hi there Middle!</h2>
 				<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Praesentium necessitatibus iure at recusandae dolore in esse sunt sapiente sed itaque? Neque ex maiores molestiae ratione nesciunt esse unde inventore maxime!</p>
 		</div>
 
-		<div class="col-4">
+		<div class="">
 				<h2>Hi there Right!</h2>
 				<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Praesentium necessitatibus iure at recusandae dolore in esse sunt sapiente sed itaque? Neque ex maiores molestiae ratione nesciunt esse unde inventore maxime!</p>
 		</div>
