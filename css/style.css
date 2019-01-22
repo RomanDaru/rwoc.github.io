@@ -3,23 +3,48 @@
     padding:0;
     box-sizing: border-box;
 }
-/*.col-1 {width: 8.33%;}
-.col-2 {width: 16.66%;}
-.col-3 {width: 25%;}
-.col-4 {width: 33.33%;}
-.col-5 {width: 41.66%;}
-.col-6 {width: 50%;}
-.col-7 {width: 58.33%;}
-.col-8 {width: 66.66%;}
-.col-9 {width: 75%;}
-.col-10 {width: 83.33%;}
-.col-11 {width: 91.66%;}
-.col-12 {width: 100%;}
 
-[class*="col-"] {
-    float: left;
-    padding: 15px;
-}*/
+@media screen and (max-width: 600px){
+
+    .topnav a{
+        float: none;
+        width: 100%;
+    }
+
+    div.topnavpic{
+        display: none;
+    }
+
+    div.landingpic{
+        box-shadow: none;
+        max-height: 650px;
+    }
+
+    div.centered{
+        margin-top: 50%;
+        height: auto;
+        font-size: 16px;
+        text-align: block;
+    }
+
+    div.flex-grid-thirds{
+        display: block;
+    }
+
+    div.flex-grid-thirds .col{
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    footer{
+        font-size: 12px;
+    }
+}
+
+.flex-grid-thirds .col img{
+    height: 100px;
+    
+}
 
 body{
     margin: 0;
@@ -27,9 +52,49 @@ body{
     background-color: #EAF1F7;
 }
 
+h1{
+    text-align: center;
+}
+
 h2{
     text-align: center;
-    margin-bottom: 25%;
+}
+
+ul{
+    margin:0;
+    padding: 0;
+}
+
+li{
+    display: inline;
+    padding: 0px 20px 0 20px;
+}
+
+.flex-grid{
+    display: flex;
+}
+
+.flex-grid .col{
+    flex: 1;
+}
+
+.flex-grid-thirds{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.flex-grid-thirds .col{
+    width: 32%;
+    text-align: center;
+    float: left;
+}
+
+#headings {
+    margin: 20px;
+    padding-top: 50px;
+    font-size: 32px;
+    font-weight: bold;
 }
 
 hr{
@@ -59,7 +124,7 @@ hr{
     overflow: hidden;
     transform: scale(1);
     box-shadow: 8px 8px 10px rgb(56, 87, 124);
-    position: relative	;
+    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -86,12 +151,6 @@ hr{
     position: absolute;
 }
 
-.topnav{
-    overflow: hidden;
-    background-color: #38577C;
-    font-weight: 500;
-}
-
 .topnavpic{
     float: left;
     color: hsl(208, 100%, 97%);
@@ -111,16 +170,22 @@ hr{
     z-index: 1;
 }
 
+.topnav{
+    background-color: #38577C;
+    text-align: right;
+    height: 50px;
+    padding-top: 15px;
+}
+
 .topnavpic a{
     text-decoration: none;
     color: aliceblue;
 }
 
 .topnav a{
-    float: right;
+    font-weight: 500;
     color: aliceblue;
     text-align: center;
-    padding: 14px 16px;
     text-decoration: none;
     font-size: 17px;
 }
